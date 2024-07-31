@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .box{
+        float: left;
+        width: 33.33%;
+        padding: 50px;
+    }
+    .menu::after{ 
+
+        clear: both;
+        display: table;
+
+    }
+    .note{
+        padding-top: 200px;
+    }
+    nav ul li{
+        display: inline;
+        background-color: bisque;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+    
+    }
+    nav ul li a{
+        text-decoration: dotted;
+        font-weight: 600;
+        font-size: larger;
+    }
+    li a:hover{
+        background-color: green;
+        color: orange;
+    } 
+</style>
+</head>
+<body>
+    <h2>Grid of Boxes</h2>
+    <nav>
+        <ul>
+            <li><a href="floatleft.html">Float left</a></li>
+            <li><a href="floatright.html">Float right</a></li>
+            <li><a href="floatnone.html">Float none</a></li>
+        </ul>
+    </nav>
+   <div class="menu">
+    <div class="box" style="background-color: aqua;">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, temporibus!
+        </p>
+
+    </div>
+    <div class="box" style="background-color: antiquewhite;">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, voluptatum.</p>
+
+    </div>
+    <div class="box" style="background-color: plum;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aperiam.</p>
+
+    </div>
+    <div>
+        <p class="note"><strong>Note:</strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque aut voluptates in! Dignissimos dolores labore dolore laborum sapiente atque exercitationem voluptates, soluta velit sed fugit. Blanditiis cumque ipsam voluptas culpa.</p>
+    </div>
+    
+
+   </div> 
+
+
+</body>
+</html>
